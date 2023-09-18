@@ -63,30 +63,7 @@ void mergeSort(int arr[], int l, int h)
     }
 }
 
-void Binary_Search(int arr[],int n)
-{
-    cout<<endl;
-    cout<<"Enter the value you want to search : ";
-    int item;
-    cin>>item;
-    int beg=1;
-    int End=n;
-    int mid=(End+beg)/2;
-    while(beg<=End && arr[mid]!=item)
-    {
-        if(item<arr[mid])
-        {
-            End=mid-1;
-        }
-        else
-        {
-            beg=mid+1;
-        }
-        mid=(End+beg)/2;
-    }
-    cout<<"Value Position : "<<mid<<endl;
-}
-
+\
 
 int main()
 {
@@ -107,7 +84,7 @@ int main()
         cout<<arr[i]<<" ";
     }
     cout<<endl;
-    Binary_Search(arr,n);
+   
 
 
 
